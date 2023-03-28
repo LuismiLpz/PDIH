@@ -26,6 +26,8 @@ int main(){
  		ch = ' ';
  		gol_p1 = 0;
  		gol_p2 = 0;
+        sprintf(golchar,"%d",gol_p1);
+        sprintf(golchar2,"%d",gol_p2);
  		seguir = true;
  	if (has_colors() == FALSE) {
     	endwin();
@@ -54,8 +56,11 @@ int main(){
     mvwprintw(window, 11, 11, "Pulse cualquier tecla para iniciar y q para salir del juego.");
     wrefresh(window);
 
-    getch(); 
- 
+    ch = getch(); 
+    if (ch == 'q')
+    {
+        seguir = false;
+    }
  //Juego	
  	cbreak();
  	keypad(stdscr, TRUE);
@@ -161,7 +166,7 @@ int main(){
     }else{
     	mvwprintw(window2, 10, 10, "La partida ha terminado en empate.");
     }
-    mvwprintw(window2, 20, 10, "Fin del Juego. Pulse q para salir o otra tecla para volver a empezar.");
+    mvwprintw(window2, 20, 10, "Fin del Juego. Pulse q para salir u otra tecla para volver a empezar.");
     wrefresh(window2);
     ch = getch();
     }while(ch!='q');
