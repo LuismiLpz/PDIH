@@ -1,0 +1,78 @@
+%!
+
+%%Programa que dibuja una casita
+
+newpath %caja de la casa
+255 330 moveto
+100 0 rlineto
+0 100 rlineto
+-100 0 rlineto
+closepath
+0.75 setgray
+fill
+
+255 330 moveto
+100 0 rlineto
+0 100 rlineto
+-100 0 rlineto
+closepath
+2 setlinewidth
+0.0 setgray
+stroke
+
+newpath %tejado
+230 430 moveto
+150 0 rlineto
+-75 65 rlineto
+closepath
+0.75 setgray
+fill
+
+230 430 moveto
+150 0 rlineto
+-75 65 rlineto
+closepath
+2 setlinewidth
+0.0 setgray 
+
+stroke
+
+newpath %puerta
+290 330 moveto
+25 0 rlineto
+0 50 rlineto
+-25 0 rlineto
+closepath
+
+1 setlinewidth
+0 0 1 setrgbcolor
+
+stroke
+
+newpath %ventana1
+
+265 400 moveto
+20 0 rlineto
+0 20 rlineto
+-20 0 rlineto
+closepath
+
+1 setlinewidth
+0 0 1 setrgbcolor
+
+stroke
+
+newpath %ventana2
+
+345 400 moveto
+-20 0 rlineto
+0 20 rlineto
+20 0 rlineto
+closepath
+
+1 setlinewidth
+0 0 1 setrgbcolor
+
+stroke
+
+showpage
