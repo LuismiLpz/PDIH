@@ -1,0 +1,79 @@
+%! 
+%%programa que dibuja una tarjeta de visita
+newpath %Fondo tarjeta
+0.95 setgray
+10 200 moveto
+595 0 rlineto
+0 400 rlineto
+-595 0 rlineto
+0 setlinewidth
+fill
+stroke
+%Dibujo
+newpath
+0.1 setlinewidth
+100 400 50 0 360 arc 
+1 0.5 0 setrgbcolor
+fill
+
+
+100 400 50 0 360 arc 
+0 setgray
+1 setlinewidth
+
+stroke
+
+newpath
+
+170 400 100 152 207 arc 
+0 setgray
+1 setlinewidth
+
+stroke
+
+newpath
+
+490 400 400 173 187 arc 
+0 setgray
+1 setlinewidth
+
+stroke
+
+newpath
+
+25 400 100 332 27 arc 
+0 setgray
+1 setlinewidth
+
+stroke
+%Parte escrita
+
+/Times-Roman findfont
+15 scalefont
+setfont
+
+newpath
+350 450 moveto
+(Luis MIguel Lopez Lopez) show
+stroke
+/Times-Roman findfont
+12 scalefont
+setfont
+
+newpath
+0.45 setgray
+350 400 moveto
+(Estudiante UGR) show
+stroke
+
+/Times-Roman findfont
+12 scalefont
+setfont
+
+newpath
+1 0.1 0.5 setrgbcolor
+350 350 moveto
+(Grado en Ingenieria Informatica) show
+stroke
+
+showpage
