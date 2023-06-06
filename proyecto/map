@@ -1,0 +1,15 @@
+Wiimote.A	=KEY_ENTER
+Wiimote.B	=KEY_BACKSPACE
+Wiimote.Up	=KEY_UP
+Wiimote.Down	=KEY_DOWN
+Wiimote.Left	=KEY_LEFT
+Wiimote.Right	=KEY_RIGHT
+Wiimote.1	=KEY_SPACE
+Wiimote.2	=KEY_Q
+Wiimote.Plus	=KEY_X
+Wiimote.Minus	=KEY_C
+Wiimote.Home	=KEY_MENU
+
+Plugin.acc.X = ABS_X
+Plugin.acc.Y = ABS_Y
+
